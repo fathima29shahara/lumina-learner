@@ -1,0 +1,235 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Lumina Learning",
+      "archetype": "The Soft Swiss",
+      "vibe": "Intellectual, Calm, Structured, Human",
+      "core_philosophy": "Digital tools with the warmth of a library. Clarity without sterility."
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Playfair Display, serif",
+        "body": "Manrope, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "weights": {
+        "headings": "font-semibold",
+        "body": "font-normal"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-6xl tracking-tight leading-tight",
+        "h2": "text-4xl md:text-5xl tracking-tight",
+        "h3": "text-2xl md:text-3xl tracking-normal",
+        "body_lg": "text-lg leading-relaxed",
+        "body_base": "text-base leading-relaxed",
+        "caption": "text-sm tracking-wide uppercase text-muted-foreground"
+      },
+      "imports": [
+        "@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');"
+      ]
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "name": "Deep Evergreen",
+          "hex": "#1A3C34",
+          "hsl": "166 40% 17%",
+          "usage": "Primary buttons, active states, strong borders"
+        },
+        "secondary": {
+          "name": "Sage Mist",
+          "hex": "#E8F3E8",
+          "hsl": "120 30% 93%",
+          "usage": "Secondary buttons, highlight backgrounds"
+        },
+        "accent": {
+          "name": "Burnt Ochre",
+          "hex": "#D97706",
+          "hsl": "32 95% 44%",
+          "usage": "Call to actions, progress bars, success states"
+        },
+        "background": {
+          "name": "Bone White",
+          "hex": "#F9F9F7",
+          "hsl": "60 10% 97%",
+          "usage": "Main page background (never pure white)"
+        },
+        "surface": {
+          "name": "White",
+          "hex": "#FFFFFF",
+          "hsl": "0 0% 100%",
+          "usage": "Cards, inputs, modals"
+        },
+        "text": {
+          "primary": "#111827",
+          "secondary": "#4B5563",
+          "muted": "#9CA3AF"
+        }
+      },
+      "css_vars": {
+        "light": {
+          "--background": "60 10% 97%",
+          "--foreground": "220 20% 10%",
+          "--card": "0 0% 100%",
+          "--card-foreground": "220 20% 10%",
+          "--popover": "0 0% 100%",
+          "--popover-foreground": "220 20% 10%",
+          "--primary": "166 40% 17%",
+          "--primary-foreground": "120 30% 93%",
+          "--secondary": "120 30% 93%",
+          "--secondary-foreground": "166 40% 17%",
+          "--muted": "60 5% 90%",
+          "--muted-foreground": "220 10% 45%",
+          "--accent": "32 95% 44%",
+          "--accent-foreground": "0 0% 100%",
+          "--destructive": "0 84.2% 60.2%",
+          "--destructive-foreground": "0 0% 98%",
+          "--border": "220 10% 85%",
+          "--input": "220 10% 85%",
+          "--ring": "166 40% 17%",
+          "--radius": "0.5rem"
+        },
+        "dark": {
+          "--background": "166 40% 5%",
+          "--foreground": "60 10% 90%",
+          "--card": "166 40% 8%",
+          "--card-foreground": "60 10% 90%",
+          "--popover": "166 40% 8%",
+          "--popover-foreground": "60 10% 90%",
+          "--primary": "120 30% 93%",
+          "--primary-foreground": "166 40% 17%",
+          "--secondary": "166 30% 15%",
+          "--secondary-foreground": "60 10% 90%",
+          "--muted": "166 30% 15%",
+          "--muted-foreground": "166 10% 60%",
+          "--accent": "32 95% 55%",
+          "--accent-foreground": "0 0% 100%",
+          "--destructive": "0 62.8% 30.6%",
+          "--destructive-foreground": "0 0% 98%",
+          "--border": "166 20% 20%",
+          "--input": "166 20% 20%",
+          "--ring": "120 30% 93%"
+        }
+      }
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "p-6 md:p-12 lg:p-16",
+        "section_gap": "gap-12 md:gap-24",
+        "element_gap": "gap-4 md:gap-6"
+      },
+      "grids": {
+        "dashboard": "grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[minmax(180px,auto)]",
+        "cards": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      },
+      "containers": {
+        "max_width": "max-w-7xl mx-auto",
+        "readable_width": "max-w-2xl"
+      }
+    },
+    "components": {
+      "buttons": {
+        "style": "rounded-full px-8 py-6 font-medium transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg active:translate-y-0",
+        "primary": "bg-primary text-primary-foreground hover:bg-primary/90",
+        "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        "outline": "border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+      },
+      "cards": {
+        "style": "bg-card text-card-foreground rounded-xl border border-border/50 shadow-sm hover:shadow-md transition-all duration-300",
+        "interactive": "cursor-pointer hover:border-primary/50 hover:shadow-lg group"
+      },
+      "inputs": {
+        "style": "rounded-lg border-2 border-input bg-transparent px-4 py-3 text-base focus-visible:ring-2 focus-visible:ring-primary focus-visible:border-primary transition-all"
+      }
+    },
+    "visual_enhancers": {
+      "texture": "Use a subtle noise texture overlay on the background with 2-3% opacity to reduce digital flatness.",
+      "glassmorphism": "backdrop-blur-xl bg-white/70 border border-white/20 shadow-sm (Light Mode)",
+      "gradients": "NO full gradients. Use subtle mesh gradients only in 'hero' areas or 'success' states.",
+      "shadows": "shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.08)]"
+    },
+    "motion": {
+      "transitions": "transition-all duration-300 ease-[cubic-bezier(0.25,0.1,0.25,1.0)]",
+      "hover": "hover:-translate-y-1",
+      "entrance": "animate-in fade-in slide-in-from-bottom-4 duration-700"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_abstract": {
+        "url": "https://images.unsplash.com/photo-1760140286145-6a0d5be5da11?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Modern minimalist architecture structure",
+        "usage": "Hero section background or abstract visual for 'Structure/Quiz'"
+      },
+      "study_buddy": {
+        "url": "https://images.unsplash.com/photo-1763890965393-1cea435581ab?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Student studying in calm library with natural light",
+        "usage": "Study Buddy feature card or page header"
+      },
+      "language_tutor": {
+        "url": "https://images.unsplash.com/photo-1658822069505-a8839dda9627?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Red building in Paris",
+        "usage": "Language Tutor feature card"
+      },
+      "dashboard_abstract": {
+        "url": "https://images.unsplash.com/photo-1628313388780-fb046760ef1a?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Abstract twisted torus",
+        "usage": "Dashboard decorative element or empty state"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-width={1.5} className='w-6 h-6'"
+    }
+  },
+  "pages": {
+    "dashboard": {
+      "layout": "Bento Grid",
+      "key_elements": [
+        "Welcome Header (Serif, Large)",
+        "Quick Actions Row (Pill buttons)",
+        "Recent Activity (List with icons)",
+        "Progress Stats (Minimal charts)"
+      ]
+    },
+    "quiz_builder": {
+      "layout": "Focused Center",
+      "key_elements": [
+        "Subject Input (Large, clear)",
+        "Difficulty Selector (Segmented control)",
+        "Generate Button (Primary, prominent)"
+      ]
+    },
+    "study_buddy": {
+      "layout": "Split View (Input Left, Content Right) or Chat Interface",
+      "key_elements": [
+        "Concept Input",
+        "Explanation Stream (Markdown rendered)",
+        "Related Topics (Chips)"
+      ]
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. UPDATE TAILWIND CONFIG: Extend the theme with the colors and fonts defined above. Do not just paste; integrate carefully.",
+    "2. UPDATE INDEX.CSS: Replace the root variables with the CSS vars provided in the 'colors' section.",
+    "3. INSTALL FONTS: Add the Google Fonts import to index.css.",
+    "4. COMPONENT OVERRIDES: When using Shadcn components, override the default 'radius-md' with 'rounded-xl' or 'rounded-full' where specified.",
+    "5. NO GENERIC BLUE: Ensure the primary color is the Deep Evergreen defined, not the default Tailwind blue.",
+    "6. USE IMAGES: Use the provided Unsplash URLs for the respective sections. Do not use placeholders.",
+    "7. DATA-TESTID: Add data-testid to all interactive elements (buttons, inputs, cards)."
+  ],
+  "universal_guidelines": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN"
+  ]
+}
